@@ -1,25 +1,30 @@
 [![Docker Pulls](https://img.shields.io/docker/pulls/nubiandev/smartfinancial-ai.svg)](https://hub.docker.com/r/nubiandev/smartfinancial-ai)
 
 
-📊 Smart Financial Insights AI Assistant
-
-
 # 📊 Smart Financial Insights AI Assistant
 
-Welcome to **Smart Financial Insights AI Assistant** — an AI-powered financial transaction classifier built to help users automatically categorize business expenses and income using **natural language processing** and **machine learning**.
+**Smart Financial Insights AI Assistant** is an AI-powered financial transaction classifier built with Python, Streamlit, and machine learning. It helps users **automatically categorize business expenses and income** using natural language processing (NLP).
 
 ---
 
 ## 🧠 Overview
 
-Managing financial data manually is tedious and error-prone. This assistant simplifies bookkeeping by automatically predicting the correct category (e.g., `Travel`, `Meals`, `Housing`, etc.) for each transaction description.
-
-Built with **Python** and **Streamlit**, this solution is fast, intuitive, and easy to deploy via **Docker**.
+Manually categorizing financial data is tedious and error-prone. This assistant simplifies bookkeeping by **predicting the appropriate category** (e.g., Travel, Meals, Housing) based on transaction descriptions. It supports CSV uploads and is ideal for freelancers, small businesses, or financial analysts.
 
 ---
 
 ## 📦 Features
 
-- 🔍 Intelligent transaction classification using ML/NLP
-- 📁 Supports CSV-based financial data
-- 📊 Streamlit-powered interactive web U
+- ✅ Predicts transaction categories using machine learning
+- ✅ CSV file upload for batch classification
+- ✅ Interactive Streamlit dashboard
+- ✅ NLP-powered classification with scikit-learn
+- ✅ Dockerized for easy deployment
+
+---
+
+## 🚀 Run with Docker
+
+```bash
+docker pull nubiandev/smartfinancial-ai:latest
+docker run -p 8501:8501 nubiandev/smartfinancial-ai
