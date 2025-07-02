@@ -1,3 +1,5 @@
+![Docker Image](https://img.shields.io/docker/image-size/nubian2dev/smart-financial-ai/latest?style=flat-square)
+
 📊 Smart Financial Insights AI Assistant
 
 
