@@ -1,85 +1,30 @@
-![Docker Image](https://img.shields.io/docker/image-size/nubian2dev/smart-financial-ai/latest?style=flat-square)
-
-📊 Smart Financial Insights AI Assistant
+[![Docker Pulls](https://img.shields.io/docker/pulls/nubiandev/smartfinancial-ai.svg)](https://hub.docker.com/r/nubiandev/smartfinancial-ai)
 
 
-Welcome to Smart Financial Insights AI Assistant — an AI-powered financial transaction classifier designed to help users automatically categorize business expenses and income using natural language processing and machine learning.
+# 📊 Smart Financial Insights AI Assistant
 
-🧠 Overview
+**Smart Financial Insights AI Assistant** is an AI-powered financial transaction classifier built with Python, Streamlit, and machine learning. It helps users **automatically categorize business expenses and income** using natural language processing (NLP).
 
-Managing financial data manually is tedious and error-prone. This assistant simplifies bookkeeping by predicting the appropriate category (e.g., Travel, Meals, Housing) for each transaction description. Built with Python and Streamlit, it's fast, intuitive, and easy to deploy.
+---
 
-📦 Features
+## 🧠 Overview
 
-🔍 Transaction Description Analysis
+Manually categorizing financial data is tedious and error-prone. This assistant simplifies bookkeeping by **predicting the appropriate category** (e.g., Travel, Meals, Housing) based on transaction descriptions. It supports CSV uploads and is ideal for freelancers, small businesses, or financial analysts.
 
-🤖 Category Prediction Using ML Model
+---
 
-📁 Sample CSV Upload & ETL Pipeline
+## 📦 Features
 
-🧪 Automated Testing with Pytest
+- ✅ Predicts transaction categories using machine learning
+- ✅ CSV file upload for batch classification
+- ✅ Interactive Streamlit dashboard
+- ✅ NLP-powered classification with scikit-learn
+- ✅ Dockerized for easy deployment
 
-🌐 Streamlit Web Interface for User Input
+---
 
-🛠️ Technologies Used
+## 🚀 Run with Docker
 
-Python 3.11
-
-Pandas, NumPy
-
-Scikit-learn (for modeling)
-
-Streamlit (for UI)
-
-Pytest (for testing)
-
-Joblib (for model serialization)
-
-🚀 Getting Started
-
-1. Clone the Repo
-
-git clone https://github.com/Nubiandev/SmartFinancialAI.git
-cd SmartFinancialAI
-
-2. Set Up Virtual Environment
-
-python3 -m venv venv
-source venv/bin/activate  # or "source venv/bin/activate.fish" if using fish shell
-pip install -r requirements.txt
-
-3. Run the App Locally
-
-streamlit run app.py
-
-Then visit: http://localhost:8501
-
-🧪 Run Tests
-
-pytest
-
-Test coverage includes ETL functions and model logic.
-
-📁 Sample Data
-
-A sample CSV file is included at:
-
-sample_data/financial_transactions.csv
-
-Feel free to upload your own CSV using the same format:
-
-Date,Description,Amount,Category
-
-👩🏽‍💻 About the Developer
-
-Built with ❤️ by Erica Smith — Junior AI Developer, certified Scrum Master, and Python enthusiast.
-
-🔗 GitHub
-
-💼 Passionate about AI/ML, FinTech, automation, and helping users simplify complex processes.
-
-
-📄 License
-
-MIT License
-
+```bash
+docker pull nubiandev/smartfinancial-ai:latest
+docker run -p 8501:8501 nubiandev/smartfinancial-ai
